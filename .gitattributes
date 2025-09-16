@@ -1,2 +1,14 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>JavaScriptの練習サイト</title>
+</head>
+
+<body>
+<header>
+</header>
+<script src="script.js"></script>
+</body>
+</html>
