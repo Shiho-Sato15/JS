@@ -1,5 +1,9 @@
+function pullDown() {
+
 const pullDownButton = document.getElementById("lists")
  const pullDownParents = document.getElementById("pull-down")
+ const pullDownChild = document.querySelectorAll(".pull-down-list")
+ const currentList = document.getElementById("current-list")
 
  pullDownButton.addEventListener('mouseover', function(){
     this.setAttribute("style" , "background-color:blue;")
@@ -25,3 +29,14 @@ console.log("クリック時は緑色")
         console.log("表示")
     }
  })
+
+  pullDownChild.forEach(function(list) {
+    list.addEventListener('click', function() {
+        const value = list.innerHTML
+            currentList.innerHTML = value
+        console.log(value)
+    })
+ })
+}
+
+window.addEventListener('load', pullDown)
